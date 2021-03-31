@@ -3,13 +3,13 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = 'wp-capistrano3'
-  spec.version       = '0.0.9'
+  spec.name          = 'capistrano-theme-uploader'
+  spec.version       = '0.0.1'
   spec.authors       = ['Nicolas RENAULT']
   spec.email         = ['nrenault@tangkoko.com']
-  spec.description   = %q{Wordpress tasks for Capistrano 3.x}
-  spec.summary       = %q{Wordpress tasks for Capistrano 3.x}
-  spec.homepage      = 'https://github.com/nicoren-tangkoko/wp-capistrano'
+  spec.description   = %q{Laravel Mix tasks for Capistrano 3.x}
+  spec.summary       = %q{Laravel Mix tasks for Capistrano 3.x}
+  spec.homepage      = 'https://github.com/nicoren-tangkoko/capistrano-theme-uploader'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
