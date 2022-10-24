@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'capistrano-theme-uploader'
-  spec.version       = '0.0.3'
+  spec.version       = '0.0.4'
   spec.authors       = ['Nicolas RENAULT']
   spec.email         = ['nrenault@tangkoko.com']
   spec.description   = %q{Laravel Mix tasks for Capistrano 3.x}
