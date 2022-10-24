@@ -8,7 +8,8 @@ namespace "capistrano-theme-uploader" do
                 fetch(:themes_to_deploy).each do |theme|
                 themesParentDir = theme.split("/")
                 themesParentDir.pop()
-                execute "scp -r  -P #{server.ssh_options[:port]} #{ENV['SOURCE_PATH']}/#{fetch(:repo_tree)}/#{theme} #{server.user}@#{server.hostname}:#{release_path}/#{themesParentDir.join('/')}"
+                print "scp -v -r  -P #{server.ssh_options[:port]} #{ENV['SOURCE_PATH']}/#{fetch(:repo_tree)}/#{theme} #{server.user}@#{server.hostname}:#{release_path}/#{themesParentDir.join('/')}"
+                execute "scp -v -r  -P #{server.ssh_options[:port]} #{ENV['SOURCE_PATH']}/#{fetch(:repo_tree)}/#{theme} #{server.user}@#{server.hostname}:#{release_path}/#{themesParentDir.join('/')}"
               end
           end
       end
